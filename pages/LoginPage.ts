@@ -5,13 +5,12 @@ export class LoginPage {
     readonly emailInput: Locator;
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
-    readonly errorMessage: Locator; // Assuming there is one based on requirements
+    readonly errorMessage: Locator; 
 
     constructor(page: Page) {
         this.page = page;
-        this.emailInput = page.locator('input[type="email"]'); // Adjust selector if needed
-        // Sometimes there are multiple inputs check specifically if needed, but generic might work for this simple app
-        // Best practice is usually by id or name if available
+        this.emailInput = page.locator('input[type="email"]'); 
+       
         this.passwordInput = page.locator('input[type="password"]');
         this.loginButton = page.locator('button[type="submit"]');
     }
