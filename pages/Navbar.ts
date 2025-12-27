@@ -10,7 +10,7 @@ export class Navbar {
 
     constructor(page: Page) {
         this.page = page;
-        // Scoping to .navbar-nav to avoid picking up buttons in the page body
+        
         this.loginLink = page.locator('.navbar-nav a[href="/login"]');
         this.basketLink = page.locator('.navbar-nav a[href="/basket"]');
         this.sweetsLink = page.locator('.navbar-nav a[href="/sweets"]');
